@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "knockout": {}
+    },
+    "packages": {
+      "knockout": {
+        "git": "https://github.com/bevanhunt/meteor-knockout.git",
+        "tag": "v0.3.2",
+        "commit": "f74925ca030cf4c266b2ca4637f33c2cd56d0a06"
+      }
+    }
+  }
+}

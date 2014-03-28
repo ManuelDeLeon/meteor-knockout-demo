@@ -1,0 +1,28 @@
+<head>
+  <title>Meteor Knockout Demo</title>
+</head>
+
+<body>
+  {{> home }}
+</body>
+
+<template name="home">
+  <div class="main-menu pull-left">
+    <div class="main-menu-block" data-step="01">
+      <div class="main-menu-title">Step 01</div>
+      <div class="main-menu-desc">Sign in button is disabled if email or password is blank.</div>
+    </div>
+    <div class="main-menu-block" data-step="02">
+      <div class="main-menu-title">Step 02</div>
+      <div class="main-menu-desc">Add tests.</div>
+    </div>
+  </div>
+  <div class="main-example pull-left">
+    {{#if stepIs '01'}}
+    {{> loginBox01 }}
+    {{/if}}
+    {{#if stepIs '02'}}
+    {{> step02 }}
+    {{/if}}
+  </div>
+</template>
