@@ -1,5 +1,5 @@
-<template name="loginBox01">
-  <div id="loginBox01">
+<template name="loginBox02">
+  <div id="loginBox02">
     <form class="form-horizontal">
       <div class="control-group">
         <label class="control-label" for="inputEmail">Email</label>
@@ -14,9 +14,8 @@
         </div>
       </div>
       <div class="control-group">
-        <div class="controls">
-          <a id="signinButton" href="#" class="btn btn pull-right" data-bind="css: { disabled: !canSignIn() }">Sign in</a>
-        </div>
+        <a id="signinButton" href="#" class="btn pull-right" data-bind="css: { disabled: !canSignIn() }">Sign in</a>
+        <div class="text-error pull-right" data-bind="text: errorMessage" ></div>
       </div>
     </form>
   </div>
