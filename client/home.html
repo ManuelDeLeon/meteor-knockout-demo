@@ -24,6 +24,10 @@
       <div class="main-menu-title">Step 04</div>
       <div class="main-menu-desc">Responding to reactive sources.</div>
     </div>
+    <div class="main-menu-block" data-step="05">
+      <div class="main-menu-title">Step 05</div>
+      <div class="main-menu-desc">Reuse the view model in another template.</div>
+    </div>
   </div>
   <div class="main-example pull-left">
     {{#if stepIs '01'}}
@@ -37,6 +41,9 @@
     {{/if}}
     {{#if stepIs '04'}}
     {{> loginBox04 }}
+    {{/if}}
+    {{#if stepIs '05'}}
+    {{> home05 }}
     {{/if}}
   </div>
 </template>
