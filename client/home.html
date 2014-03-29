@@ -16,6 +16,14 @@
       <div class="main-menu-title">Step 02</div>
       <div class="main-menu-desc">When the user hovers over the disabled button show a text message explaining why it's disabled.</div>
     </div>
+    <div class="main-menu-block" data-step="03">
+      <div class="main-menu-title">Step 03</div>
+      <div class="main-menu-desc">Maintain the state using a Session variable.</div>
+    </div>
+    <div class="main-menu-block" data-step="04">
+      <div class="main-menu-title">Step 04</div>
+      <div class="main-menu-desc">Responding to reactive sources.</div>
+    </div>
   </div>
   <div class="main-example pull-left">
     {{#if stepIs '01'}}
@@ -23,6 +31,12 @@
     {{/if}}
     {{#if stepIs '02'}}
     {{> loginBox02 }}
+    {{/if}}
+    {{#if stepIs '03'}}
+    {{> loginBox03 }}
+    {{/if}}
+    {{#if stepIs '04'}}
+    {{> loginBox04 }}
     {{/if}}
   </div>
 </template>

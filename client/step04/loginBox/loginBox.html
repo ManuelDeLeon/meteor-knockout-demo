@@ -1,0 +1,22 @@
+<template name="loginBox04">
+  <div id="loginBox04">
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="inputEmail">Email</label>
+        <div class="controls">
+          <input type="text" id="inputEmail" placeholder="Email" data-bind="value: email, valueUpdate: 'afterkeydown'">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="inputPassword">Password</label>
+        <div class="controls">
+          <input type="password" id="inputPassword" placeholder="Password" data-bind="value: password, valueUpdate: 'afterkeydown'">
+        </div>
+      </div>
+      <div class="control-group">
+        <a id="signinButton" href="#" class="btn pull-right" data-bind="css: { disabled: !canSignIn() }">Sign in</a>
+        <div class="text-error pull-right" data-bind="text: errorMessage" ></div>
+      </div>
+    </form>
+  </div>
+</template>
