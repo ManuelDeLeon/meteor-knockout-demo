@@ -1,3 +1,4 @@
+
 Session.setDefault 'loginData',
   email: ''
   password: ''
@@ -22,3 +23,4 @@ class @LoginViewModel05
         "Password can't be blank"
       else
         ""
+

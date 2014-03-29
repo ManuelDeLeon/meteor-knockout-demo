@@ -1,5 +1,6 @@
 {
   "packages": {
-    "knockout": {}
+    "knockout": {},
+    "mocha-web": {}
   }
 }

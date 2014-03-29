@@ -28,6 +28,10 @@
       <div class="main-menu-title">Step 05</div>
       <div class="main-menu-desc">Reuse the view model in another template.</div>
     </div>
+    <div class="main-menu-block" data-step="06">
+      <div class="main-menu-title">Step 06</div>
+      <div class="main-menu-desc">Unit Tests.</div>
+    </div>
   </div>
   <div class="main-example pull-left">
     {{#if stepIs '01'}}
@@ -44,6 +48,9 @@
     {{/if}}
     {{#if stepIs '05'}}
     {{> home05 }}
+    {{/if}}
+    {{#if stepIs '06'}}
+    {{> mochaTestReport}}
     {{/if}}
   </div>
 </template>
