@@ -2,19 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "knockout": {},
-      "mocha-web": {}
+      "mocha-web": {},
+      "knockout": {}
     },
     "packages": {
-      "knockout": {
-        "git": "https://github.com/bevanhunt/meteor-knockout.git",
-        "tag": "v0.3.2",
-        "commit": "f74925ca030cf4c266b2ca4637f33c2cd56d0a06"
-      },
       "mocha-web": {
         "git": "https://github.com/mad-eye/meteor-mocha-web.git",
         "tag": "v0.2.2",
         "commit": "cc58d823457944334ed70e2569147856bbc2ef66"
+      },
+      "knockout": {
+        "git": "https://github.com/bevanhunt/meteor-knockout.git",
+        "tag": "v0.3.2",
+        "commit": "f74925ca030cf4c266b2ca4637f33c2cd56d0a06"
       }
     }
   }
