@@ -1,4 +1,4 @@
-endsWith = (str, suffix) -> str.indexOf(suffix, str.length - suffix.length) isnt -1
+endsWith = (str, suffix) -> str and suffix and str.indexOf(suffix, str.length - suffix.length) isnt -1
 
 class @AcmeViewModel05 extends LoginViewModel05
   constructor: ->
