@@ -1,17 +1,10 @@
-
-Session.setDefault 'loginData',
-  email: ''
-  password: ''
+Session.setDefault 'loginData', {}
 
 class @LoginViewModel05
   constructor: ->
     data = Session.get 'loginData'
     @email = ko.observable data.email
     @password = ko.observable data.password
-    ko.computed =>
-      Session.set 'loginData',
-        email: @email()
-        password: @password()
     @inMaintenance = ko.observable false
     @canSignIn = ko.computed => !!@email() and !!@password() and not @inMaintenance()
     @errorMessage = ko.computed =>
@@ -23,4 +16,5 @@ class @LoginViewModel05
         "Password can't be blank"
       else
         ""
+    ko.computed => Session.set 'loginData', ko.toJS(@)
 

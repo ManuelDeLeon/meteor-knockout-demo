@@ -1,10 +1,10 @@
-Session.setDefault 'loginData', undefined
+Session.setDefault 'loginData', {}
 
 class @LoginViewModel03
   constructor: ->
     data = Session.get 'loginData'
-    @email = ko.observable data?.email
-    @password = ko.observable data?.password
+    @email = ko.observable data.email
+    @password = ko.observable data.password
     @canSignIn = ko.computed => !!@email() and !!@password()
     @errorMessage = ko.computed =>
       if !@email()
