@@ -1,0 +1,14 @@
+template(name='loginBox07')
+  #loginBox07
+    form.form-horizontal
+      .control-group
+        label.control-label(for='inputEmail') Email
+        .controls
+          input#inputEmail(type='text', placeholder='Email', value="{{email}}")
+      .control-group
+        label.control-label(for='inputPassword') Password
+        .controls
+          input#inputPassword(type='password', placeholder='Password', value="{{password}}")
+      .control-group
+        a#signinButton.btn.pull-right(href='#') Sign in
+        .text-error.pull-right {{ errorMessage }}

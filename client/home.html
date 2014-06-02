@@ -32,6 +32,10 @@
       <div class="main-menu-title">Step 06</div>
       <div class="main-menu-desc">Unit Tests.</div>
     </div>
+    <div class="main-menu-block" data-step="07">
+      <div class="main-menu-title">Step 07</div>
+      <div class="main-menu-desc">No Knockout?</div>
+    </div>
   </div>
   <div class="main-example pull-left">
     {{#if stepIs '01'}}
@@ -51,6 +55,9 @@
     {{/if}}
     {{#if stepIs '06'}}
     {{> mochaTestReport}}
+    {{/if}}
+    {{#if stepIs '07'}}
+    {{> loginBox07}}
     {{/if}}
   </div>
 </template>

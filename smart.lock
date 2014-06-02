@@ -2,13 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "mocha-web": {}
+      "mocha-web": {},
+      "jade": {}
     },
     "packages": {
       "mocha-web": {
         "git": "https://github.com/mad-eye/meteor-mocha-web.git",
-        "tag": "v0.2.3",
-        "commit": "5a681e206ad455d29a0e445caedc7bb1cbc12f47"
+        "tag": "v0.2.4",
+        "commit": "97194bc90ea9b32047973ff44562a3da3b4e7477"
+      },
+      "jade": {
+        "git": "https://github.com/mquandalle/meteor-jade.git",
+        "tag": "v0.2.4",
+        "commit": "a47a4c59daaa57e7fe5f1544d4ea76d95a5c9abf"
       }
     }
   }
